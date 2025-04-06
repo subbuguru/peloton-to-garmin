@@ -48,8 +48,22 @@ jobs:
             "SaveLocalCopy": ${{ github.event.inputs.saveLocalCopy || false }},
             "IncludeTimeInHRZones": false,
             "IncludeTimeInPowerZones": false,
+            "DeviceInfoSettings": {
+              "none": {
+                "name": "EPIX PRO - 47 mm",
+                "unitId": 3483139889,
+                "productID": 4313,
+                "manufacturerId": 1,
+                "version": {
+                  "versionMajor": 20,
+                  "versionMinor": 22,
+                  "buildMajor": 0,
+                  "buildMinor": 0
+                }
+              }
+            },
             "StackedWorkouts": {
-              "AutomaticallyStackWorkouts": false,
+              "AutomaticallyStackWorkouts": true,
               "MaxAllowedGapSeconds": 300
             }
           },
